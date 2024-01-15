@@ -1,22 +1,20 @@
 import type { Metadata } from 'next'
-import { Poppins} from 'next/font/google'
-import './globals.css'
-import { Weight } from 'lucide-react'
+import { Poppins } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 
-const poppins = Poppins({ 
+import './globals.css'
+
+const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins' ,
-
-
+  variable: '--font-poppins',
 })
 
 export const metadata: Metadata = {
-  title: 'Vandy Events',
-  description: 'Break free from the dorm and dive into campus events',
+  title: 'VandyEvents',
+  description: 'Unlock a world beyond your dorm door to enjoy your Commodore life',
   icons: {
-    icon: '/assets/images/logo.png'
+    icon: '/assets/images/headlogo.png'
   }
 }
 
@@ -27,9 +25,10 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body className={poppins.variable}>{children}</body>
-    </html>
+      <html lang="en">
+        
+        <body className={poppins.variable}>{children}</body>
+      </html>
     </ClerkProvider>
   )
 }

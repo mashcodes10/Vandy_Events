@@ -246,12 +246,19 @@ body {
 .cl-userButtonPopoverCard {
   right: 4px !important;
 }
-
+.cl-formButtonPrimary {
+  font-size: 14px;
+  text-transform: none;
+  background-color: #cfae70
+}
 .cl-formButtonPrimary:hover,
 .cl-formButtonPrimary:focus,
 .cl-formButtonPrimary:active {
-  background-color: #705CF7
+  background-color: #cfae70
 }
+
+
+
 
 /* ========================================== REACT-DATEPICKER STYLES */
 .datePicker {
@@ -275,14 +282,3 @@ body {
   background-color: #624cf5 !important;
 }
 
-.cl-formButtonPrimary {
-  font-size: 14px;
-  text-transform: none;
-  background-color: #cfae70;
-}
- 
-.cl-formButtonPrimary:hover,
-.cl-formButtonPrimary:focus,
-.cl-formButtonPrimary:active {
-  background-color: #AE9463;
-}

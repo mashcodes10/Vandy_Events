@@ -19,6 +19,14 @@ module.exports = withUt({
     },
     extend: {
       colors: {
+        'custom-beige': '#F9E4B7',
+        'button': '#cfae70',
+        'order': '#FF7F50',
+        'cardfont': '#1c1c1c',
+        'lightbg' : '#f5f3ef',
+        
+        
+        
         primary: {
           500: '#624CF5',
           50: ' #F6F8FD',

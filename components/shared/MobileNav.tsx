@@ -1,21 +1,20 @@
 import {
-    Sheet,
-    SheetContent,
-    SheetDescription,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
-  } from "@/components/ui/sheet"
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 import Image from "next/image"
-import { Separator } from "../separator"
+import { Separator } from "../ui/separator"
 import NavItems from "./NavItems"
-  
+
 
 const MobileNav = () => {
   return (
-      <nav className="md:hidden">
-
-          <Sheet>
+    <nav className="md:hidden">
+       <Sheet>
               <SheetTrigger className="align-middle">
               <Image
                src="/assets/icons/menu-svgrepo-com.svg"
@@ -34,14 +33,11 @@ const MobileNav = () => {
                height={30}
                
                />
-
-               <Separator className="border border-gray-50" />
-                <NavItems/>
-                  
-              </SheetContent>
-          </Sheet>
-
-      </nav>
+          <Separator className="border border-gray-50" />
+          <NavItems />
+        </SheetContent>
+      </Sheet>
+    </nav>
   )
 }
 
